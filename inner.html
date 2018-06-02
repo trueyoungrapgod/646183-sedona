@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-hedder-logo" href="index.html">
+            <img src="logo.svg" alt="Логотип SEDONA" width="140" height="70">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="information.html">ИНФОРМАЦИЯ</a></li>
+            <li><a href="photos&videos.html">ФОТО И ВИДЕО</a></li>
+            <li><a href="map.html">КАРТА ШТАТА</a></li>
+            <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+    <section class="filter">
+        <h2 class="filter-text">ИНФРАСТРУКТУРА</h2>
+        <ul>
+          <li><input type="checkbox" name="swimmingpool" value="1" checked><p>БАССЕЙН</p></li>
+          <li><input type="checkbox" name="parking" value="2"><p>ПАРКОВКА</p></li>
+          <li><input type="checkbox" name="wi-fi" value="3"><p>WI-FI</p></li>
+        </ul>
+        <h2>ТИП ЖИЛЬЯ</h2>
+        <ul>
+          <li><input type="checkbox" name="hotel" value="4" checked><p>ГОСТИНИЦА</p></li>
+          <li><input type="checkbox" name="motel" value=5 checked><p>МОТЕЛЬ</p></li>
+          <li><input type="checkbox" name="appartament" value="6" checked><p>АПАРТАМЕНТЫ</p></li>
+        </ul>
+        <h2>СТОИМОСТЬ В СУТКИ(Р):</h2>
+        <p>ОТ 0</p><p>ДО 3000</p>
+        <spun></spun>
+        <button>ПОКАЗАТЬ</button>
+    </section>
+    <section>
+        <p>НАЙДЕНО: 3</p>
+        <p>СОРТИРОВКА:</p>
+        <ul>
+            <li><button>ПО ЦЕНЕ</button></li>
+            <li><button>ПО ТИПУ</button></li>
+            <li><button>ПО РЕЙТИНГУ</button></li>
+        </ul>
+        <h2 class="hidden"></h2>
+        <article class="hotel">
+            <img src="amara.svg" alt="Фото отеля" width="135" height="90">
+            <h3 class="hotel-name">AMARA RESORT & SPA</h3>
+            <p class="hotel-class">ГОСТИНИЦА</p>
+            <p class="hotel-price">ОТ 4000 Р.</p>
+            <a class="hotel-info" href="AMARARESORT.html">ПОДРОБНЕЕ</a>
+            <a class="hotel-booking" href="bookingAMARARESORT.html">ЗАБРОНИРОВАТЬ</a>
+        </article>
+        <article class="hotel">
+            <img src="desert.svg" alt="Фото мотеля" width="135" height="90">
+            <h3 class="hotel-name">DESERT QUAIL INN</h3>
+            <p class="hotel-class">МОТЕЛЬ</p>
+            <p class="hotel-price">ОТ 3000 Р.</p>
+            <a class="hotel-info" href="DESERTINN.html">ПОДРОБНЕЕ</a>
+            <a class="hotel-booking" href="bookingDESERTINN.html">ЗАБРОНИРОВАТЬ</a>
+        </article>
+          <article class="hotel">
+            <img src="villas.svg" alt="Фото апартаментов" width="135" height="90">
+            <h3 class="hotel-name">VILLAS AT PACO DIABLO</h3>
+            <p class="hotel-class">АПАРТАМЕНТЫ</p>
+            <p class="hotel-price">ОТ 2000 Р.</p>
+            <a class="hotel-info" href="villas.html">ПОДРОБНЕЕ</a>
+            <a class="hotel-booking" href="bookingVILLAS.html">ЗАБРОНИРОВАТЬ</a>
+        </article>
+    </section>
+    </main>
+    <footer class="main-footer">
+          <spin class="footer-tag">#VISITSEDONA</spin>
+          <div class="footer-social">
+             <ul>
+              <li><a class="social-button" href="#">Twitter</a></li>
+              <li><a class="social-button" href="#">FaceBook</a></li>
+              <li><a class="social-button" href="#">YouTube</a></li>
+             </ul>
+          </div>
+          <p class="footer-copyright">
+             <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+          </p>
+        </footer>
+  </body>
+</html>
