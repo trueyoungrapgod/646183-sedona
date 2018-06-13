@@ -20,6 +20,7 @@
       </header>
     <main>
     <section class="filter">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="filter-text">ИНФРАСТРУКТУРА</h2>
         <ul>
           <li><label><input type="checkbox" name="swimmingpool" value="1" checked>БАССЕЙН</label></li>
@@ -35,15 +36,16 @@
         <h2>СТОИМОСТЬ В СУТКИ(Р):</h2>
         <p>ОТ 0</p><p>ДО 3000</p>
         <input type="range" name="price-filter">
-        <button>ПОКАЗАТЬ</button>
+        <button type="submit">ПОКАЗАТЬ</button>
+        </form>
     </section>
     <section>
         <p>НАЙДЕНО: 3</p>
         <p>СОРТИРОВКА:</p>
         <ul>
-            <li><button>ПО ЦЕНЕ</button></li>
-            <li><button>ПО ТИПУ</button></li>
-            <li><button>ПО РЕЙТИНГУ</button></li>
+            <li><a href="pocene.html">ПО ЦЕНЕ</a></li>
+            <li><a href="potipu.html">ПО ТИПУ</a></li>
+            <li><a href="poreitingu.html">ПО РЕЙТИНГУ</a></li>
         </ul>
         <h2 class="visually-hidden">Отели:</h2>
         <section class="hotel">
