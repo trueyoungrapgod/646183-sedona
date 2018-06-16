@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight:: 700;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #ffffff;
+
+}
+
+a {
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight:: 700;
+    color: #333333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+     text-align: center;
+}
+
+.main-navigation {
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+
+.page-title {
+        background: url(../img/background.jpg) no-repeat  top center;
+}
+
+div.page-title::after {
+    background: no-repeat url(../img/Shape.png) ;
+    background-size: 103%;
+    background-position: top center;
+    
+    margin: 0;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+/*.site-navigation a:hover,
+.site-navigation a:focus {
+   
+}*/
+
+.reasons ul{
+    list-style: none;
+}
+
+.reasons h2 {
+    color: #333333;
+
+}
+
+.reason1,
+.reason2 {
+    color: #fff;
+    background-color: rgb(129, 179, 210)
+}
+
+.reason345 {
+    color: #333333;
+    background-color: rgb(238, 238, 238);
+}
+
+.chips ul li{
+    list-style: none; 
+}
+
+.living-chip {
+    background: url(../img/icon-1.svg) no-repeat;
+} 
+
+.gotcha h2 {
+    font-size: 24px;
+}
+
+.gotcha button {
+    font-size: 21px;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgb(118, 99, 87);
+    border: none;
+}
+
+
+
+
+div.reason1 {
+
+    
+}
+
+img.sight {
+
+}
+
+
+
+
+
+section.modal-search {
+    background-color: #fff;
+    padding: 58px 57px;
+}

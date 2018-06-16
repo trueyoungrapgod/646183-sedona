@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -18,80 +21,115 @@
           </ul>
         </nav>
       </header>
+      
       <main class="container">
+          
         <section class="page-title">
-          <img  src="img/Welcome1.png" alt="WELCOME TO SEDONA" width="458" height="352">
+          <div class="page-title"> 
+          <img  class="page-title" src="img/Welcome1.png" alt="WELCOME TO SEDONA" width="458" height="352">
+          </div>
           <h1 class="billboard">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
         </section>
+          
         <section class="reasons">
           <h2>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</h2>
           <ul>
-            <li class="reason1">
+            <li class="reason reason1">
                 <h3 class="reason-title1">НАСТОЯЩИЙ ГОРОДОК</h3>
                 <span class="reason-text1">- №1 -</span>
                 <br>
                 <p class="reason-text1">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
                 <img src="img/Layer10.jpg" class="Sight" alt="Красивый домик" width="800" height="400">
             </li>
-            <li class="reason2">
+            <li class="reason reason2">
                 <img src="img/Layer5.jpg" class="Sight" alt="Мост дьявола" width="800" height="400">
                 <h3 class="reason-title1">ТУТ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
                 <span class="reason-text1">- №2 -</span>
                 <br>
                 <p class="reason-text1">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ...</p>
             </li>
-            <li class="reason3">
+            <div class="reason345">
+            <li class="reason reason3">
                 <h3 class="reason-title2">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
                 <span class="reason-text2">- №3 -</span>
                 <br>
                 <p class="reason-text2">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТЬСЯ ОЧЕНЬ БЛИЗКО</p>
             </li>
-            <li class="reason4">
+            <li class="reason reason4">
                 <h3 class="reason-title2">КАРАСИВАЯ ДОРОГА</h3>
                 <span class="reason-text2">- №4 -</span>
                 <br>
                 <p class="reason-text2">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
             </li>
-            <li class="reason5">
+            <li class="reason reason5">
                 <h3 class="reason-title2">МАЛО ТУРИСТОВ</h3>
                 <span class="reason-text2">- №5 -</span>
                 <br>
                 <p class="reason-text2">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТЬСЯ ТАМ</p>
             </li>
+              </div>
           </ul>
         </section>
+          
         <section class="chips">
             <ul>
              <li>
                 <h3 class="reason-title2">ЖИЛЬЁ</h3>
                 <p class="reason-text2">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!</p> 
              </li>
-             <li>
+             <li  class="food-chip">
                 <h3 class="reason-title2">ЕДА</h3>
                 <p class="reason-text2">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p> 
              </li>
-             <li>
+             <li  class="present-chip">
                 <h3 class="reason-title2">СУВЕНИРЫ</h3>
                 <p class="reason-text2">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p> 
              </li>
             </ul>
         </section>
+          
         <section class="gotcha">
           <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <P>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЙ ГОСТИНИЦ В СЕДОНЕ</P>
           <button type="button" name="open-search">ПОИСК ГОСТИНИЦ В СЕДОНЕ</button>
         </section>
+            
+          
+        <section class="modal modal-search">
+          
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+          <legend class="visually-hidden">Поиск отеля</legend>
+          <label for="date-in"><p>ДАТА ЗАЕЗДА:</p></label><input id="date-in" type="text" name="date-in">
+          <br>
+          <label for="date-out"><p>ДАТА ВЫЕЗДА:</p></label><input  id="date-out" type="text" name="date-out">
+          <br>
+          <label for="person-nomber"><p>ВЗРОСЛЫЕ:</p></label>
+          <button class="button-minus" type="button">-</button>
+          <input type="text" placeholder="2" name="person-nomber" id="person-nomber">
+          <button class="button-plus" type="button">+</button>
+          <label for="child-nomber"><p>ДЕТИ:</p></label>
+          <button class="button-minus" type="button">-</button>
+          <input type="text" placeholder="0" name="child-nomber" id="child-nomber">
+          <button class="button-plus" type="button">+</button>
+          <br>
+          <button class="button" type="submit">Найти</button>
+          </fieldset>
+          </form>
+        </section>
         <section class="map">
             <img src="img/map.jpg" width="1200" height="593" alt="Карта">
         </section>
+          
       </main>
-        <footer class="main-footer">
+
+      <footer class="main-footer">
           <span class="footer-tag">#VISITSEDONA</span>
           <div class="footer-social">
              <ul>
-              <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a></li>
-              <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a></li>
-              <li><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a></li>
+              <li><a class="social-button" href="#"><img src="img/twitter.svg"></a></li>
+              <li><a class="social-button" href="#"><img src="img/youtube.svg"></a></li>
+              <li><a class="social-button" href="#"><img src="img/fb-icon.svg"></a></li>
              </ul>
           </div>
           <p class="footer-copyright">
@@ -99,23 +137,7 @@
              </a>
           </p>
         </footer>
-      <section class="modal modal-search">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label><b>ДАТА ЗАЕЗДА:</b><input type="date" name="date-in"></label>
-          <br>
-          <label><b>ДАТА ВЫЕЗДА:</b><input type="date" name="date-out"></label>
-          <br>
-          <label for="person-nomber"><b>ВЗРОСЛЫЕ:</b></label>
-          <button class="button-minus" type="button">-</button>
-          <input type="text" placeholder="2" name="person-nomber" id="person-nomber">
-          <button class="button-plus" type="button">+</button>
-          <label for="child-nomber"><b>ДЕТИ:</b></label>
-          <button class="button-minus" type="button">-</button>
-          <input type="text" placeholder="0" name="child-nomber" id="child-nomber">
-          <button class="button-plus" type="button">+</button>
-          <br>
-          <button class="button" type="submit">Найти</button>
-          </form>
-      </section>
+      
+      
   </body>
 </html>
