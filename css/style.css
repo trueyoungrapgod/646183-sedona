@@ -8,6 +8,7 @@ body {
     font-weight:: 700;
     color: #000000;
     text-transform: uppercase;
+    text-transform: uppercase;
     background-color: #ffffff;
 
 }
@@ -47,12 +48,18 @@ div.page-title::after {
 
 .site-navigation {
     list-style: none;
+    
+    font-style: bold;
 }
 
-/*.site-navigation a:hover,
+.site-navigation a:hover,
 .site-navigation a:focus {
-   
-}*/
+   color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: rgb( 202, 202, 202);
+}
 
 .reasons ul{
     list-style: none;
@@ -60,6 +67,7 @@ div.page-title::after {
 
 .reasons h2 {
     color: #333333;
+    font-size: 14px;
 
 }
 
@@ -69,7 +77,9 @@ div.page-title::after {
     background-color: rgb(129, 179, 210)
 }
 
-.reason345 {
+.reason3,
+.reason4,
+.reason5 {
     color: #333333;
     background-color: rgb(238, 238, 238);
 }
@@ -83,7 +93,7 @@ div.page-title::after {
 } 
 
 .gotcha h2 {
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .gotcha button {
@@ -111,6 +121,286 @@ img.sight {
 
 
 section.modal-search {
+    
+
     background-color: #fff;
     padding: 58px 57px;
+    width: 568px;
+    height: 396px;
+}
+
+
+
+.billboard {
+    font-size: 21px;
+}
+
+.reason-title {
+    font-size: 21px;
+}
+
+.footer-tag {
+    font-style: bold;
+}
+
+.footer-copyright {
+    font-style: bold;
+}
+
+.footer-social ul {
+        list-style: none;
+}
+
+.home {
+    background-image: url(../img/icon-1.svg);
+}
+
+fieldset {
+    border: 0;
+}
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+
+ul.filter {
+    list-style: none;    
+}
+
+.hotels-list ul {
+    list-style: none;    
+}
+
+.filter-text {
+    font-size: 16px;
+}
+
+section.filter {
+    color: #fff;
+    background: no-repeat url(../img/filterbackground.jpg);
+}
+
+p.founded-text {
+    font-size: 21px;
+}
+
+.founded-text-min {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.hotel-name {
+    font-size: 21px;
+}
+
+.hotel-class,
+.hotel-price {
+    color: #333;
+}
+
+.hotel-info,
+.hotel-booking {
+    color: #fff;
+}
+
+.hotel-info {
+    background-color: rgb(129, 179, 210);
+}
+
+.hotel-booking {
+    background-color: rgb(118, 99, 87);
+}
+
+
+
+section.hotel {
+    margin: 0px;
+    border-bottom:  2px solid rgb(229, 229, 229);
+}
+
+section.hotel1 {
+    border-top:  2px solid rgb(229, 229, 229);
+}
+
+li.social-button {
+    display: block;
+    width: 46px;
+    height: 48px;
+    background-color:  rgb(129, 179, 210);
+}
+
+
+
+.sorting-button {
+    text-decoration: none;
+    border-bottom: 1px dashed #81b3d2;
+    color: rgb(178, 178, 178);
+}
+
+.sorting-button:hover,
+.sorting-button:focus {
+    color: #81b3d2;
+}
+
+.sorting-button:active {
+    color: #000;
+}
+
+.arrow {
+     fill: rgb(202, 202, 202); 
+}
+
+.arrow:hover,
+.arrow:focus {
+     fill: rgb(0, 0, 0); 
+}
+
+.arrow:active {
+     fill: #81b3d2; 
+}
+
+
+
+
+.hotel-info:focus,
+.hotel-info:hover {
+    background-color: rgb( 102, 158, 192);
+}
+
+.hotel-info:active {
+    color: rgba(255,255,255,0.9);
+    background-color: rgb(84,150,189);
+}
+
+.hotel-booking:focus,
+.hotel-booking:hover {
+    background-color: rgb(96,78,67);
+}
+
+
+.hotel-booking:active {
+    color: rgba(255,255,255,0.9);
+    background-color: rgb(80,62,51);
+}
+
+.hotel-name:focus,
+.hotel-name:hover {
+    color: #81b3d2;
+}
+
+.hotel-name:active {
+    color: rgb(202,202,202);
+}
+
+.gotcha button:focus,
+.gotcha button:hover {
+    background-color: rgb(96,78, 67);
+}
+
+.gotcha button:active {
+    color: rgba(255,255,255,0.7);
+    background-color: rgb(80,62,51);
+}
+
+.pole-vvod {
+    background-color: rgb(242,242,242);
+}
+
+
+.pole-vvod:hover {
+    background-color: rgb(235,235,235);
+}
+
+.pole-vvod:focus,
+.pole-vvod:active {
+    background-color: #fff;
+}
+
+.button-minus,
+.button-plus {
+    color: rgb(169,169,169);
+}
+
+
+.button-minus:active,
+.button-plus:active {
+    color: rgb(129,179,210);
+}
+
+.button-minus:focus,
+.button-plus:focus,
+.button-minus:hover,
+.button-plus:hover {
+    color: #000;
+}
+
+.button-find {
+    color: #fff;
+    background-color: rgb(129,179,210);
+}ss
+
+.button-find:focus,
+.button-find:hover {
+    background-color: rgb(102,158,192);
+}
+
+.button-find:active {
+    color: rgba( 255, 255, 255, 0.98);
+    background-color: rgb(84,150,189);
+}
+
+
+
+#Layer_1 {
+    fill: "#231f20";
+}
+
+#Layer_1:focus,
+#Layer_1:hover {
+    fill: rgb(129,179,210);
+}
+
+#Layer_1:active {
+    fill: rgb(189,187,188);
+}
+
+li.home-chip {
+    background: no-repeat url(../img/icon-1.svg);
+}
+
+li.food-chip {
+   background: no-repeat url(../img/icon-3.svg); 
+}
+
+li.present-chip {
+   background: no-repeat url(../img/icon-2.svg); 
+}
+
+
+
+li.social-button:focus,
+li.social-button:hover {
+    background: rgb(102, 158, 192);
+}
+
+li.social-button img:active {
+    opacity: 0.9;
+}
+
+li.social-button:active {
+    background: rgb(84,150,189);
 }
