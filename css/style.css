@@ -5,19 +5,19 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
-    font-weight:: 700;
     color: #000000;
     text-transform: uppercase;
     text-transform: uppercase;
-    background-color: #ffffff;
-
+    background-color: rgb(242,242,242);
+    
+    display: flex;
+    justify-content: center;
 }
 
 a {
     font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
-    font-weight:: 700;
     color: #333333;
     text-transform: uppercase;
     text-decoration: none;
@@ -32,9 +32,15 @@ main {
     color: #000000;
     
     background-color: #ffffff;
+    
+    display: flex;
 }
 
-.page-title {
+section.page-title {
+        display: block;
+        width: 1200;
+        height: 566;
+    
         background: url(../img/background.jpg) no-repeat  top center;
 }
 
@@ -92,10 +98,6 @@ div.page-title::after {
     background: url(../img/icon-1.svg) no-repeat;
 } 
 
-.gotcha h2 {
-    font-size: 30px;
-}
-
 .gotcha button {
     font-size: 21px;
     color: #ffffff;
@@ -103,22 +105,6 @@ div.page-title::after {
     background-color: rgb(118, 99, 87);
     border: none;
 }
-
-
-
-
-div.reason1 {
-
-    
-}
-
-img.sight {
-
-}
-
-
-
-
 
 section.modal-search {
     
@@ -132,6 +118,7 @@ section.modal-search {
 
 
 .billboard {
+    padding-top: 600px;
     font-size: 21px;
 }
 
@@ -160,7 +147,7 @@ fieldset {
 }
 
 .main-footer {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -168,7 +155,8 @@ fieldset {
 
 
 ul.filter {
-    list-style: none;    
+    list-style: none; 
+    line-height: 21px;
 }
 
 .hotels-list ul {
@@ -186,6 +174,7 @@ section.filter {
 
 p.founded-text {
     font-size: 21px;
+    line-height: 26px;
 }
 
 .founded-text-min {
@@ -215,6 +204,7 @@ p.founded-text {
 .hotel-info,
 .hotel-booking {
     color: #fff;
+    line-height: 21px;
 }
 
 .hotel-info {
@@ -236,7 +226,9 @@ section.hotel1 {
     border-top:  2px solid rgb(229, 229, 229);
 }
 
-li.social-button {
+.social-items {
+    list-style: none;
+    
     display: block;
     width: 46px;
     height: 48px;
@@ -282,7 +274,7 @@ li.social-button {
 }
 
 .hotel-info:active {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.3);
     background-color: rgb(84,150,189);
 }
 
@@ -293,7 +285,7 @@ li.social-button {
 
 
 .hotel-booking:active {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.3);
     background-color: rgb(80,62,51);
 }
 
@@ -349,6 +341,7 @@ li.social-button {
 }
 
 .button-find {
+    font-size: 21px;
     color: #fff;
     background-color: rgb(129,179,210);
 }ss
@@ -359,7 +352,7 @@ li.social-button {
 }
 
 .button-find:active {
-    color: rgba( 255, 255, 255, 0.98);
+    color: rgba( 255, 255, 255, 0.3);
     background-color: rgb(84,150,189);
 }
 
@@ -392,15 +385,57 @@ li.present-chip {
 
 
 
-li.social-button:focus,
-li.social-button:hover {
+.social-button:focus,
+.social-button:hover {
     background: rgb(102, 158, 192);
 }
 
-li.social-button img:active {
-    opacity: 0.9;
+.social-button:active img {
+    opacity: 0.3;
 }
 
-li.social-button:active {
+.social-button:active {
     background: rgb(84,150,189);
 }
+
+.site-container {
+    margin: 0;
+    padding: 0;
+    
+    width: 1200px;
+    background-color: #ffffff;
+}
+
+.reason {
+    line-height: 21px;
+}
+
+.chips {
+    line-height: 21px;
+}
+
+
+
+.gotcha h2{
+    line-height: 36px;
+    font-size: 30px;
+}
+
+.gotcha {
+    line-height: 24px;
+}
+
+.chip {
+    display: block; 
+    height: 330px;
+}
+
+
+.social-button {
+    display: block;
+    width: 46px;
+    height: 48px;
+    background-color: rgb(129,179,210);
+}
+
+
