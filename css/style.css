@@ -42,6 +42,7 @@ section.page-title {
         height: 566;
     
         background: url(../img/background.jpg) no-repeat  top center;
+
 }
 
 div.page-title::after {
@@ -54,8 +55,15 @@ div.page-title::after {
 
 .site-navigation {
     list-style: none;
-    
     font-style: bold;
+    
+    display: flex;
+    width: 1200px;
+    height: 56px;
+    justify-content: space-around;
+    
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation a:hover,
@@ -74,13 +82,16 @@ div.page-title::after {
 .reasons h2 {
     color: #333333;
     font-size: 14px;
-
 }
 
 .reason1,
 .reason2 {
     color: #fff;
-    background-color: rgb(129, 179, 210)
+    background-color: rgb(129, 179, 210);
+    display: flex;
+    width: 1200px;
+    height: 245;
+
 }
 
 .reason3,
@@ -88,6 +99,14 @@ div.page-title::after {
 .reason5 {
     color: #333333;
     background-color: rgb(238, 238, 238);
+    
+    width: 400px;
+    height: 215px;
+    
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    
 }
 
 .chips ul li{
@@ -104,15 +123,21 @@ div.page-title::after {
     text-align: center;
     background-color: rgb(118, 99, 87);
     border: none;
+    width: 568px;
+    height: 86px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    
 }
 
-section.modal-search {
-    
+.modal-search {
+    position: absolute;
+    right: 436px;
+    z-index: 1;
 
     background-color: #fff;
-    padding: 58px 57px;
     width: 568px;
-    height: 396px;
+    height: 395px;
 }
 
 
@@ -120,6 +145,9 @@ section.modal-search {
 .billboard {
     padding-top: 600px;
     font-size: 21px;
+    
+    display: inline-block;
+    width: 440px;
 }
 
 .reason-title {
@@ -127,15 +155,18 @@ section.modal-search {
 }
 
 .footer-tag {
-    font-style: bold;
+    font-weight: bold;
+    font-size: 21px;
 }
 
-.footer-copyright {
-    font-style: bold;
-}
+
 
 .footer-social ul {
-        list-style: none;
+    list-style: none;
+    
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .home {
@@ -147,7 +178,11 @@ fieldset {
 }
 
 .main-footer {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgb(255, 255, 255);
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
@@ -310,6 +345,11 @@ section.hotel1 {
 
 .pole-vvod {
     background-color: rgb(242,242,242);
+    
+    height: 38px;
+    border: 0;
+    
+    margin-bottom: 30px;
 }
 
 
@@ -325,11 +365,18 @@ section.hotel1 {
 .button-minus,
 .button-plus {
     color: rgb(169,169,169);
+    font-weight: bold;
+    border: 0;
+    width: 38px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(242,242,242);
 }
 
 
-.button-minus:active,
-.button-plus:active {
+.button-minus:active span,
+.button-plus:active span{
     color: rgb(129,179,210);
 }
 
@@ -344,6 +391,11 @@ section.hotel1 {
     font-size: 21px;
     color: #fff;
     background-color: rgb(129,179,210);
+    
+    width: 458px;
+    height: 58px;
+    
+    margin-top: 25px;
 }ss
 
 .button-find:focus,
@@ -360,6 +412,8 @@ section.hotel1 {
 
 #Layer_1 {
     fill: "#231f20";
+    width: 115px;
+    height: 41px;
 }
 
 #Layer_1:focus,
@@ -373,20 +427,24 @@ section.hotel1 {
 
 li.home-chip {
     background: no-repeat url(../img/icon-1.svg);
+    background-position: 50% 61px;
 }
 
 li.food-chip {
-   background: no-repeat url(../img/icon-3.svg); 
+   background: no-repeat url(../img/icon-3.svg);
+   background-position: 50% 61px;
 }
 
 li.present-chip {
    background: no-repeat url(../img/icon-2.svg); 
+   background-position: 50% 61px;
 }
 
 
 
 .social-button:focus,
 .social-button:hover {
+    display: block;
     background: rgb(102, 158, 192);
 }
 
@@ -410,8 +468,10 @@ li.present-chip {
     line-height: 21px;
 }
 
-.chips {
+.chips ul{
     line-height: 21px;
+    
+    display: flex;
 }
 
 
@@ -419,23 +479,137 @@ li.present-chip {
 .gotcha h2{
     line-height: 36px;
     font-size: 30px;
+    
+    margin-top: 50px;
 }
 
 .gotcha {
     line-height: 24px;
+    
+    display: inline-block;
+    height: 290px; 
 }
 
 .chip {
     display: block; 
-    height: 330px;
+    height: 170px;
+    
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 160px;
 }
 
 
 .social-button {
-    display: block;
     width: 46px;
     height: 48px;
     background-color: rgb(129,179,210);
 }
+
+.reasons h2 {
+    font-weight: normal;
+}
+
+.site-navigation {
+    align-items: center;
+}
+
+.logo-li {
+    align-self: flex-start;
+}
+
+
+
+.reason-text-block {
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.reasons ul{
+    padding-left: 0;
+}
+
+.reason img{
+    height: 255px;
+}
+
+.reasons345 {
+    display: flex;
+}
+
+.gotcha p {
+    padding-left: 382px;
+    padding-right: 382px;
+}
+
+
+
+#date-in,
+#date-out {
+    width: 346px;
+}
+
+.polle-vvod-nomber {
+    width: 38px;
+    
+    margin-left: -3px;
+    margin-right: -5px;
+    
+    text-align: center;
+}
+
+.form-label {
+    padding-right: 17px;
+    font-weight: bold;
+}
+
+.search-form {
+    margin-top: 55px;
+}
+
+.borron-plus-first {
+    
+}
+
+.button-plus-first {
+    margin-right: 40px;
+}
+
+
+
+.form-label-person-nomber {
+    margin-left: 18px;
+}
+
+.form-label-child-nomber {
+    padding-left: 16px;
+}
+
+.footer-social ul{
+    display: flex;
+    align-items: center;
+}
+
+.footer-copyright-container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.social-button-href img{
+    position: relative;
+    left: 30%;
+    top: 30%;
+}
+
+
 
 
