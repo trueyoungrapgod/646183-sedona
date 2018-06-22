@@ -25,59 +25,114 @@
         
     <section class="filter">
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="spisok-filtrov spisok-filtrov1">
         <h2 class="filter-text">ИНФРАСТРУКТУРА</h2>
-        <ul class="filter">
+        <ul>
           <li><input id="checkbox-swimmingpool" type="checkbox" name="swimmingpool" value="1" checked><label for="checkbox-swimmingpool">БАССЕЙН</label></li>
           <li><input id="checkbox-parking" type="checkbox" name="parking" value="2"><label for="checkbox-parking">ПАРКОВКА</label></li>
           <li><input id="checkbox-wi-fi" type="checkbox" name="wi-fi" value="3"><label for="checkbox-wi-fi">WI-FI</label></li>
         </ul>
+        </div>
+        <div class="spisok-filtrov spisok-filtrov2">
         <h2 class="filter-text">ТИП ЖИЛЬЯ</h2>
-        <ul class="filter">
+        <ul>
           <li><input id="checkbox-hotel" type="checkbox" name="hotel" value="4" checked><label for="checkbox-hotel">ГОСТИНИЦА</label></li>
           <li><input id="checkbox-motel" type="checkbox" name="motel" value=5 checked><label for="checkbox-motel">МОТЕЛЬ</label></li>
           <li><input id="checkbox-appartament" type="checkbox" name="appartament" value="6" checked><label for="checkbox-appartament">АПАРТАМЕНТЫ</label></li>
         </ul>
-        <h2  class="filter-text">СТОИМОСТЬ В СУТКИ(Р):</h2>
-        <p>ОТ 0</p><p>ДО 3000</p>
-        <input type="range" name="price-filter">
-        <button type="submit">ПОКАЗАТЬ</button>
+        </div>
+        <div class="price-filter">
+        <h2  class="filter-text">СТОИМОСТЬ В СУТКИ (Р):</h2>
+        <div class="otdo"><p class="ebalvrot">ОТ 0</p><p  class="ebalvrotnaoborot">ДО 3000</p></div>
+        <input id="price-range" type="range" name="price-filter">
+        <br>
+        <button class="show-button" type="submit">ПОКАЗАТЬ</button>
+        </div>
         </form>
     </section>
         
     <section class="hotels-list">
+        <div class="found-info">
         <p class="founded-text">НАЙДЕНО: 3</p>
-        <p class="founded-text-min">СОРТИРОВКА:</p>
+        <p class="founded-text-min founded-text-min-sort">СОРТИРОВКА:</p>
         <ul>
             <li><a href="pocene.html"><p   class="founded-text-min sorting-button">ПО ЦЕНЕ</p></a></li>
             <li><a href="potipu.html"><p   class="founded-text-min sorting-button">ПО ТИПУ</p></a></li>
             <li><a href="poreitingu.html"><p   class="founded-text-min sorting-button">ПО РЕЙТИНГУ</p></a></li>
         </ul>
         <a href="huyegoznaet.html" class="arrow arrow-up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg></a><a href="huyegoznaetdown.html" class="arrow arrow-down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path  d="M5.5 10L0 0h11"/></svg></a>
+        </div>
         <h2 class="visually-hidden">Отели:</h2>
+        
         <section class="hotel hotel1">
-            <img src="img/Layer21.jpg" alt="Фото отеля" width="135" height="90">
+            <img src="img/Layer21.jpg" alt="Фотоs отеля" width="135" height="90">
+            <div class="hotel-text-info">
              <a href="amara.html"  class="hotel-name">AMARA RESORT & SPA</a>
+            <div class="yaebalvashiclassy">
             <p class="hotel-class">ГОСТИНИЦА</p>
             <p class="hotel-price">ОТ 4000 Р.</p>
+            </div>
+            <div class="yaebalvashiclassybbb">
             <a class="hotel-info" href="AMARARESORT.html">ПОДРОБНЕЕ</a>
             <a class="hotel-booking" href="bookingAMARARESORT.html">ЗАБРОНИРОВАТЬ</a>
+            </div>
+            </div>
+            <div class="hotel-reiting">
+            <div class="star-section">
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            </div>
+            <span class="reiting">РЕЙТИНГ: 8,5</span>
+            </div>
         </section>
-        <section class="hotel">
+        
+        <section class="hotel hotel2">
             <img src="img/Layer89.jpg" alt="Фото мотеля" width="135" height="90">
+            <div class="hotel-text-info">
             <a href="desert.html" class="hotel-name">DESERT QUAIL INN</a>
+            <div class="yaebalvashiclassy">
             <p class="hotel-class">МОТЕЛЬ</p>
             <p class="hotel-price">ОТ 3000 Р.</p>
+            </div>
+            <div class="yaebalvashiclassybbb">
             <a class="hotel-info" href="DESERTINN.html">ПОДРОБНЕЕ</a>
             <a class="hotel-booking" href="bookingDESERTINN.html">ЗАБРОНИРОВАТЬ</a>
+            </div>
+            </div>
+            <div class="hotel-reiting">
+            <div class="star-section">
+            <span class="stars"></span>
+            <span class="stars"></span>
+            <span class="stars"></span>
+            </div>
+            <span class="reiting">РЕЙТИНГ: 8,9</span>
+            </div>
         </section>
-          <section class="hotel">
+        
+        <section class="hotel hotel3">
             <img src="img/Layer22.jpg" alt="Фото апартаментов" width="135" height="90">
+            <div class="hotel-text-info">
             <a href="villas.html" class="hotel-name">VILLAS AT PACO DIABLO</a>
+            <div class="yaebalvashiclassy">
             <p class="hotel-class">АПАРТАМЕНТЫ</p>
             <p class="hotel-price">ОТ 2000 Р.</p>
+            </div>
+            <div class="yaebalvashiclassybbb">
             <a class="hotel-info" href="villas.html">ПОДРОБНЕЕ</a>
             <a class="hotel-booking" href="bookingVILLAS.html">ЗАБРОНИРОВАТЬ</a>
+            </div>
+            </div>
+            <div class="hotel-reiting">
+            <div class="star-section">
+            <span class="stars"></span>
+            <span class="stars"></span>
+            </div>
+            <span class="reiting">РЕЙТИНГ: 9,2</span>
+            </div>
         </section>
+        
     </section>
         
     </main>

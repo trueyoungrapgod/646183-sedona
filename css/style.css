@@ -132,7 +132,7 @@ div.page-title::after {
 
 .modal-search {
     position: absolute;
-    right: 436px;
+    right: calc(436px);
     z-index: 1;
 
     background-color: #fff;
@@ -189,9 +189,10 @@ fieldset {
 
 
 
-ul.filter {
+.filter ul{
     list-style: none; 
     line-height: 21px;
+    
 }
 
 .hotels-list ul {
@@ -202,7 +203,7 @@ ul.filter {
     font-size: 16px;
 }
 
-section.filter {
+.filter {
     color: #fff;
     background: no-repeat url(../img/filterbackground.jpg);
 }
@@ -210,6 +211,7 @@ section.filter {
 p.founded-text {
     font-size: 21px;
     line-height: 26px;
+    margin-left: 73px;
 }
 
 .founded-text-min {
@@ -240,14 +242,18 @@ p.founded-text {
 .hotel-booking {
     color: #fff;
     line-height: 21px;
+    height: 27px;
+    margin-left: 5px;
 }
 
 .hotel-info {
     background-color: rgb(129, 179, 210);
+    width: 110px;
 }
 
 .hotel-booking {
     background-color: rgb(118, 99, 87);
+    width: 142px;
 }
 
 
@@ -255,7 +261,14 @@ p.founded-text {
 section.hotel {
     margin: 0px;
     border-bottom:  2px solid rgb(229, 229, 229);
+    
+    display: flex;
+    width: 1200px;
+    height: 152px;
+    align-items: center;
+    align-content: center;
 }
+
 
 section.hotel1 {
     border-top:  2px solid rgb(229, 229, 229);
@@ -276,6 +289,7 @@ section.hotel1 {
     text-decoration: none;
     border-bottom: 1px dashed #81b3d2;
     color: rgb(178, 178, 178);
+    margin-left: 30px;
 }
 
 .sorting-button:hover,
@@ -389,6 +403,7 @@ section.hotel1 {
 
 .button-find {
     font-size: 21px;
+    line-height: 26px;
     color: #fff;
     background-color: rgb(129,179,210);
     
@@ -613,3 +628,170 @@ li.present-chip {
 
 
 
+
+.reason-title2 {
+    font-size: 21px;
+}
+
+.gotcha-button {
+    line-height: 26px;
+}
+
+
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    height: 215px;
+}
+
+.found-info {
+    display: flex;
+    height: 86px;
+    align-items: center;
+}
+
+.found-info  ul {
+     display: flex;
+     margin-left: 8px;
+}
+
+.founded-text-min-sort {
+     margin-left: 45px;
+}
+
+.arrow-up {
+    margin-left: 500px;
+    margin-right: 10px;
+}
+
+.hotel img{
+    margin-left: 73px;
+}
+
+.hotel-text-info {
+    margin-left: 30px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 255px;
+    height: 90px;
+}
+
+.yaebalvashiclassy {
+    display: flex;
+    width: 185px;
+    justify-content: space-between;
+    
+    line-height: 21px;
+    font-size: 14px;
+    
+    margin-top: -10px;
+}
+
+.yaebalvashiclassybbb {
+        display: flex;
+        line-height: 21px;
+}
+
+.spisok-filtrov {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 140px;
+}
+
+.spisok-filtrov ul{
+    padding: 0;
+}
+
+.spisok-filtrov2 {
+    margin-left: 150px;
+}
+
+.spisok-filtrov1 {
+    margin-left: 73px;
+}
+
+.price-filter {
+    margin-left: 350px;
+    width: 315px;
+    
+}
+
+.otdo {
+    display: flex;
+    border: 3px solid #fff;
+    height: 35px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.price-filter h2{
+        text-align: left;
+}
+
+.ebalvrot {
+    border-right: 3px solid #fff;
+    padding-right: 64px;
+    padding-left: 67px;
+}
+
+.ebalvrotnaoborot {
+    padding-right: 50px;
+}
+
+.show-button {
+  display: inline-block;
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  width: 135px;
+  height: 35px;
+  margin-top: 20px;
+}
+
+#price-range {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.stars {
+    display: block;
+    background: no-repeat url(../img/star.svg);
+    height: 17px;
+    width: 18px;
+}
+
+
+
+.star-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17px;
+}
+
+.reiting {
+    display: inline-block;
+    line-height: 21px;
+    width: 110px;
+    height: 27px;
+    background: rgb(242,242,242);
+    text-align: center;
+    color: #666;
+    margin-top: 50px;
+}
+
+.hotel-reiting {
+    display: flex;
+    flex-wrap: wrap;
+    width: 110px;
+    justify-content: flex-end;
+    margin-left: 525px;
+}
